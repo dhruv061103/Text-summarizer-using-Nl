@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    top: 0;
+    /* background-color: #D8DADE; */
+}
+.jumbotron{
+    height: 150px;
+    padding: 0;
+    background-color: #A7AAB4;
+}  
+.jumbotron .container{
+    padding-top: 10px;
+    background-color:#A7AAB4;
+}
+.display-4{
+    background-color: #A7AAB4;
+}
+.lead{
+    top: 100px;
+    background-color: #A7AAB4;
+}
+.form-control{
+    height: 400px;
+    margin: 0 0 2% 0;
+}
+.text-container{
+    width: 80%;
+    margin: 0 0 0% 10%;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.text-container .btn{
+    background-color: #363636;
+}
+
+
+/* <<<<<<<<================================summary========================>>>>>>>>>>>>> */
+.original_title{
+    background-color: #D8DADE;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+}
+.summary_title{
+    background-color:#D8DADE;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+}
+
+.srt{
+    display: flex;
+    flex-direction: row;
+}
+
+.originalTxt{
+    background-color: #D8DADE;
+    padding: 20px;
+}
+.summaryTxt{
+    background-color: #D8DADE;
+    padding:20px;
+    margin: 0 0 16px 10px;
+    height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+@media(max-width:750px)
+{
+    
+}
+/* <<<<<<<<================================summary========================>>>>>>>>>>>>> */

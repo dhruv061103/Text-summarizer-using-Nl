@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    top: 0;
+    margin: 0;
+    /* background-color: #010101; */
+    /* background-color: #3333; */
+}
+.jumbotron{
+    height: 150px;
+    padding: 0;
+    background-color: #A7AAB4;
+}  
+.jumbotron .container{
+    padding-top: 10px;
+    background-color:#A7AAB4;
+}
+.display-4{
+    background-color: #A7AAB4;
+}
+.lead{
+    top: 100px;
+    background-color: #A7AAB4;
+}
+.original_title{
+    background-color: #D8DADE;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+}
+.summary_title1{
+    background-color: #D8DADE;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+}
+.summary_title2{display: none;}
+.main-container{
+    display: flex;
+    width: 80%;
+    margin:  0 0 0 10%;
+    justify-content: space-evenly;
+}
+.main-container .original{
+    width: 45%;
+}
+.main-container .original textarea{
+    background-color: #D8DADE;
+    height: 400px;
+    margin: 0 0 16px 0;
+    color: black;
+}
+.main-container .summary{
+    width: 45%;
+    /* height: 400px; */
+}
+.main-container .summary .summaryTxt{
+    padding: 10px;
+    background-color: #D8DADE;
+    height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+/* .sub-btn{
+    float: right;
+    padding: 6px 15px 6px 15px;
+    border-radius: 8px;
+    background-color: #363636;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+} */
+/* <<<<<<<<<<<<<========================submit button style ============================>>>>>>>>>>>>>>>>>>>>.. */
+.glow-on-hover {
+    float: right;
+    padding: 6px 15px 6px 15px;
+    border-radius: 8px;
+    background-color: #363636;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    /* color: #fff; */
+    /* background: #111; */
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
+    background: linear-gradient(45deg, #2B303A, #0C7C59, #D64933, #2374AB, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* <<<<<<<<<<<<<========================submit button style ============================>>>>>>>>>>>>>>>>>>>>.. */
+@media(max-width:850px)
+{
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .summary_title1{display: none;}
+    .summary_title2{
+        display: block;
+        background-color: #D8DADE;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 2px;
+        text-align: center;
+    }
+    .main-container{
+        display: flex;
+        width: 90%;
+        margin:  0 0 0 5%;
+        justify-content: space-evenly;
+    }
+    .main-container .original{
+        width: 100%;
+    }
+    .main-container .summary{
+        width: 100%;
+    }
+}
